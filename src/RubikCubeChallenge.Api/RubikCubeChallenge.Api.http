@@ -1,0 +1,6 @@
+@RubikCube.Api_HostAddress = http://localhost:5183
+
+GET {{RubikCube.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
