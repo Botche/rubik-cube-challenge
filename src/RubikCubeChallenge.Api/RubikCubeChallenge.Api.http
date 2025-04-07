@@ -1,6 +1,11 @@
-@RubikCube.Api_HostAddress = http://localhost:5183
+@RubikCube.Api_HostAddress = https://localhost:7032
 
-GET {{RubikCube.Api_HostAddress}}/weatherforecast/
+GET {{RubikCube.Api_HostAddress}}/api/rubik-cube/state
+Accept: application/json
+
+###
+
+POST {{RubikCube.Api_HostAddress}}/api/rubik-cube/rotate/Front
 Accept: application/json
 
 ###
