@@ -1,3 +1,5 @@
+[![Build and Test](https://github.com/Botche/rubik-cube-challenge/actions/workflows/dotnet.yml/badge.svg?branch=main)](https://github.com/Botche/rubik-cube-challenge/actions/workflows/dotnet.yml)
+
 # Rubik's Cube Simulator
 
 This is a simple console-based Rubik's Cube simulator built in C#. It allows you to perform face rotations and see the resulting state of the cube. The purpose of this application is not to solve the cube, but to simulate and visualize its rotations from a solved state.
