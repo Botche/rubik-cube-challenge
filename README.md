@@ -84,7 +84,18 @@ Enter commands such as `U R F'` and press **Enter**.
 
 ---
 
-## Project Structure
+## Run the Web API Program
+
+```bash
+dotnet run --project ./src/RubikCubeChallenge.Api
+```
+
+A swagger will load with endpoints that are exposing the rubik's cube logic
+such as rotating a face, viewing the state of the cube and reseting to the initial state.
+
+---
+
+## Solution Structure
 
 ```
 RubikCubeChallenge/
