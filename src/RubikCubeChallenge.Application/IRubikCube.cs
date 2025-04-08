@@ -10,4 +10,6 @@ public interface IRubikCube
     void MoveDown(bool isInverted = false);
 
     void Reset();
+
+    string ToString(string delimiterToJoin);
 }

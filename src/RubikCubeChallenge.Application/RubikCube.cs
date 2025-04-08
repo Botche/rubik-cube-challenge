@@ -64,11 +64,16 @@ public class RubikCube : IRubikCube
 
     public override string ToString()
     {
+        return ToString("");
+    }
+
+    public string ToString(string delimiterToJoin)
+    {
         var builder = new StringBuilder();
 
         for (int row = 0; row < Instance2D.GetLength(0); row++)
         {
-            builder.AppendLine(string.Join(' ', Instance2D[row]));
+            builder.AppendLine(string.Join(delimiterToJoin, Instance2D[row]));
         }
 
         return builder.ToString();

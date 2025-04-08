@@ -7,6 +7,8 @@ using RubikCubeChallenge.Application;
 
 public class RubikCubeTests
 {
+    const string WhiteSpaceDelimiter = " ";
+
     private readonly IRubikCube rubikCube = new RubikCube();
 
     public RubikCubeTests()
@@ -28,7 +30,7 @@ public class RubikCubeTests
         expectedRubikCube.AppendLine("      Y Y Y            ");
         expectedRubikCube.AppendLine("      Y Y Y            ");
 
-        var rubikCubeToString = rubikCube.ToString();
+        var rubikCubeToString = rubikCube.ToString(WhiteSpaceDelimiter);
 
         Assert.Equal(expectedRubikCube.ToString(), rubikCubeToString);
     }
@@ -54,7 +56,7 @@ public class RubikCubeTests
         rubikCube.MoveLeft();
         rubikCube.MoveDown(true);
 
-        Assert.Equal(expectedRubikCube.ToString(), rubikCube.ToString());
+        Assert.Equal(expectedRubikCube.ToString(), rubikCube.ToString(WhiteSpaceDelimiter));
     }
 
     [Fact]
@@ -86,7 +88,7 @@ public class RubikCubeTests
         cube.MoveRight(true);
         cube.MoveFront(true);
 
-        Assert.Equal(expected.ToString(), cube.ToString());
+        Assert.Equal(expected.ToString(), cube.ToString(WhiteSpaceDelimiter));
     }
 
     [Fact]
@@ -119,7 +121,7 @@ public class RubikCubeTests
         cube.MoveLeft(true);
         cube.MoveDown(true);
 
-        Assert.Equal(expected.ToString(), cube.ToString());
+        Assert.Equal(expected.ToString(), cube.ToString(WhiteSpaceDelimiter));
     }
 
     [Fact]
@@ -142,7 +144,7 @@ public class RubikCubeTests
 
         rubikCube.Reset();
 
-        Assert.Equal(expectedRubikCube.ToString(), rubikCube.ToString());
+        Assert.Equal(expectedRubikCube.ToString(), rubikCube.ToString(WhiteSpaceDelimiter));
     }
 
     [Fact]
@@ -161,7 +163,7 @@ public class RubikCubeTests
 
         rubikCube.MoveFront();
 
-        Assert.Equal(expectedRubikCube.ToString(), rubikCube.ToString());
+        Assert.Equal(expectedRubikCube.ToString(), rubikCube.ToString(WhiteSpaceDelimiter));
     }
 
     [Fact]
@@ -180,7 +182,7 @@ public class RubikCubeTests
 
         rubikCube.MoveFront(true);
 
-        Assert.Equal(expectedRubikCube.ToString(), rubikCube.ToString());
+        Assert.Equal(expectedRubikCube.ToString(), rubikCube.ToString(WhiteSpaceDelimiter));
     }
 
     [Fact]
@@ -199,7 +201,7 @@ public class RubikCubeTests
 
         rubikCube.MoveRight();
 
-        Assert.Equal(expectedRubikCube.ToString(), rubikCube.ToString());
+        Assert.Equal(expectedRubikCube.ToString(), rubikCube.ToString(WhiteSpaceDelimiter));
     }
 
     [Fact]
@@ -218,7 +220,7 @@ public class RubikCubeTests
 
         rubikCube.MoveRight(true);
 
-        Assert.Equal(expectedRubikCube.ToString(), rubikCube.ToString());
+        Assert.Equal(expectedRubikCube.ToString(), rubikCube.ToString(WhiteSpaceDelimiter));
     }
 
     [Fact]
@@ -237,7 +239,7 @@ public class RubikCubeTests
 
         rubikCube.MoveUp();
 
-        Assert.Equal(expectedRubikCube.ToString(), rubikCube.ToString());
+        Assert.Equal(expectedRubikCube.ToString(), rubikCube.ToString(WhiteSpaceDelimiter));
     }
 
     [Fact]
@@ -256,7 +258,7 @@ public class RubikCubeTests
 
         rubikCube.MoveUp(true);
 
-        Assert.Equal(expectedRubikCube.ToString(), rubikCube.ToString());
+        Assert.Equal(expectedRubikCube.ToString(), rubikCube.ToString(WhiteSpaceDelimiter));
     }
 
     [Fact]
@@ -275,7 +277,7 @@ public class RubikCubeTests
 
         rubikCube.MoveBack();
 
-        Assert.Equal(expectedRubikCube.ToString(), rubikCube.ToString());
+        Assert.Equal(expectedRubikCube.ToString(), rubikCube.ToString(WhiteSpaceDelimiter));
     }
 
     [Fact]
@@ -294,7 +296,7 @@ public class RubikCubeTests
 
         rubikCube.MoveBack(true);
 
-        Assert.Equal(expectedRubikCube.ToString(), rubikCube.ToString());
+        Assert.Equal(expectedRubikCube.ToString(), rubikCube.ToString(WhiteSpaceDelimiter));
     }
 
     [Fact]
@@ -313,7 +315,7 @@ public class RubikCubeTests
 
         rubikCube.MoveLeft();
 
-        Assert.Equal(expectedRubikCube.ToString(), rubikCube.ToString());
+        Assert.Equal(expectedRubikCube.ToString(), rubikCube.ToString(WhiteSpaceDelimiter));
     }
 
     [Fact]
@@ -332,7 +334,7 @@ public class RubikCubeTests
 
         rubikCube.MoveLeft(true);
 
-        Assert.Equal(expectedRubikCube.ToString(), rubikCube.ToString());
+        Assert.Equal(expectedRubikCube.ToString(), rubikCube.ToString(WhiteSpaceDelimiter));
     }
 
     [Fact]
@@ -351,7 +353,7 @@ public class RubikCubeTests
 
         rubikCube.MoveDown();
 
-        Assert.Equal(expectedRubikCube.ToString(), rubikCube.ToString());
+        Assert.Equal(expectedRubikCube.ToString(), rubikCube.ToString(WhiteSpaceDelimiter));
     }
 
     [Fact]
@@ -370,6 +372,6 @@ public class RubikCubeTests
 
         rubikCube.MoveDown(true);
 
-        Assert.Equal(expectedRubikCube.ToString(), rubikCube.ToString());
+        Assert.Equal(expectedRubikCube.ToString(), rubikCube.ToString(WhiteSpaceDelimiter));
     }
 }

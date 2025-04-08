@@ -30,7 +30,7 @@ while (input != "EXIT")
                 Console.WriteLine($"Invalid command: {command}. Please try again.");
             }
         }
-        Console.WriteLine(rubikCube);
+        Console.WriteLine(rubikCube.ToString(" "));
     }
 
     Console.Write("Enter another rubik cube's operation: ");
